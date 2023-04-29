@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0057)https://scp-wiki.wdfiles.com/local-%2Dcode/info%3Astyle/5 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja" style="padding:0;margin:0;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta http-equiv="content-language" content="ja,jp-ja">
+        
+        <link rel="stylesheet" href="./1">
+        <style>
+          body{
+            background:transparent;
+            padding:0;
+          }
+        </style>
+        <script src="./jquery.min.js.download"></script>
+        <script>
+          $(function() {
+            var ua = navigator.userAgent.toLowerCase();
+            var bReload= true;
+            if ( ( ua.indexOf("applewebkit") >= 0 ||  ua.indexOf("firefox") >= 0 ) && ua.indexOf("edge") == -1 )
+              bReload= false;
+            $('.back').click(closeCredit);
+            function closeCredit() {
+              if ( bReload ) {
+                history.go(-1);
+                parent.location.href = document.referrer.split('#')[0];
+              } else {
+                history.go(-1);
+              }
+              return false;
+            }
+          });
+        </script>
+    </head>
+    <body style="padding:0;margin:0;" data-new-gr-c-s-check-loaded="14.1073.0" data-gr-ext-installed="">
+        <div style="width: 100%; text-align: center;">
+        <a class="back" style="cursor: pointer;">X
+        </a></div><a class="back" style="cursor: pointer;">
+    
+
+</a></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

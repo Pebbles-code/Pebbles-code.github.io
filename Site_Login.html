@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Site 19</title>
+        
+    <meta http-equiv="content-language" content="en">
+<script>
+if (!sessionStorage.getItem("loggedIn")) {
+  // Redirect to login page
+  window.location.href = "Main_Login.html";
+}
+</script>
+    <style type="text/css" id="internal-style">
+        
+        /* modules */
+
+
+        
+                
+        /* theme */
+                    @import url(./scp/index_files/style.css);
+                    @import url(./scp/index_files/1);
+            </style>
+    
+        
+       
+<style>
+iframe.scpnet-interwiki-frame { height: 0; }
+</style>
+<style>
+@import url("./resources/css/normalize.min.css");
+@import url("./resources/css/black-highlighter.min.19.css");
+@import url("./resources/css/darksidebar.css");
+@import url("./resources/css/anombar.css");
+@import url("./resources/css/extrablack.css");
+@import url("./resources/css/center.css");
+
+a[rel="license"]::after {
+    content: ".";
+}
+</style>
+<style>
+@import url(https://scp-wiki.wdfiles.com/local--code/info%3Astyle/1);
+</style>
+<style>
+.collection {
+ margin-top: 0.5rem;
+ margin-bottom: 0.5rem;
+}
+
+.collection .articlecolumn .list-pages-item,
+.collection .articlecolumn .list-pages-item > div,
+.collection .articlecolumn .list-pages-item > p {
+  display: inline;
+}
+
+.collection .articlecolumn .list-pages-item p {
+    margin: 0;
+}
+.collection .collapsible-block {
+    display: block;
+    text-align: center;
+    padding: 0.15em;
+    background-color: rgb(var(--white-monochrome));
+    background-color: white;
+    border: 1px solid rgb(var(--black-monochrome));
+    border: 1px solid black;
+}
+
+.collection .collapsible-block-unfolded-link a , .collection .collapsible-block-folded a {
+  display: block;
+  color: rgb(var(--medium-accent));
+  color: rgba(100, 46, 44, 1);
+  font-weight: bold;
+  background-color: rgba(var(--bright-accent), 0.25);
+  background-color: rgba(224, 191, 192, 1);
+  margin: auto;
+  border: 2px solid rgb(var(--white-monochrome));
+  border: 2px solid white;
+}
+
+.collection > .collapsible-block .collapsible-block-content {
+    text-align: left;
+}
+
+.titlecolumn {
+  width: 15%;
+  border: 1px solid rgb(var(--white-monochrome));
+  border: 1px solid white;
+  background-color: rgba(var(--bright-accent), 0.25);
+  background-color: rgba(224, 191, 192, 1);
+  text-align: right;
+  padding: 6px;
+}
+
+.articlecolumn {
+  width: 85%;
+  background-color: rgb(var(--white-monochrome));
+  background-color: white;
+  padding: 3px;
+  font-weight: normal;
+  font-size: 85%;
+}
+
+.namerow {
+  color: rgb(var(--black-monochrome));
+  color: rgba(0, 0, 0, 1);
+  font-weight: bold;
+  background-color: rgba(var(--bright-accent), 0.25);
+  background-color: rgba(224, 191, 192, 1);
+  margin: 0 auto;
+  border: 2px solid rgb(var(--white-monochrome));
+  border: 2px solid white;
+  text-align: center;
+}
+
+.namerow a {
+  color: rgb(var(--medium-accent));
+  color: rgba(100, 46, 44, 1);
+}
+
+.namerow p {
+    margin: 0;
+}
+
+.collectiondot {
+  padding: 0 4px;
+}
+
+.articlecolumn .list-pages-item:last-child .collectiondot {
+  display: none;
+}
+#header {
+  position: relative;
+}
+
+#user-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+   z-index: 2; /* add this line */
+}
+
+#user-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   justify-content: flex-end; /* add this property */
+  
+}
+
+#user-info {
+  display: inline-block;
+}
+#clearance-level span:first-child {
+  margin-right: 10px;
+}
+#user-name {
+  font-weight: bold;
+}
+
+#clearance-level span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#clearance-level {
+z-index: 2; /* add this line */
+  position: absolute;
+  top: 45%;
+  transform: translateY(-120%);
+  right: 0;
+  clear: both;
+
+}
+
+</style>
+<script src="users_site-19.js"></script>
+<script>
+window.onload = function() {
+  const storedUsername = localStorage.getItem("username");
+  const storedClearanceLevel = localStorage.getItem("clearanceLevel");
+
+  if (storedUsername) {
+    document.getElementById("username").textContent = storedUsername;
+  }
+
+  if (storedClearanceLevel) {
+    document.getElementById("clearlvl").textContent = storedClearanceLevel;
+
+    if (storedClearanceLevel === "1") {
+      document.getElementById("clearlvl").style.color = "green";
+    } else if (storedClearanceLevel === "2") {
+      document.getElementById("clearlvl").style.color = "orange";
+    } else if (storedClearanceLevel === "3") {
+      document.getElementById("clearlvl").style.color = "red";
+    } else if (storedClearanceLevel === "4") {
+      document.getElementById("clearlvl").style.color = "blue";
+    } else if (storedClearanceLevel === "5") {
+      document.getElementById("clearlvl").style.color = "purple";
+    }
+  }
+}
+
+
+</script>
+
+</head>
+
+<body>
+
+<div id="skrollr-body">
+
+<a name="page-top"></a>
+
+
+
+
+<div id="container-wrap-wrap">
+    <div id="container-wrap">
+        <div id="container">
+<div id="header">
+    <div id="user-header-container">
+        <div id="user-info">
+            <span style="" id="user-name-text">Welcome <a href="#" id="username" style="color: white; font-weight:bold; font-size: 117%"></a></span>
+            <a href="#" id="logout-button" style="color: red">Logout</a>
+        </div>
+
+<div id="clearance-level">
+  <span style="line-height: 50px; vertical-align: middle;">Clearance Level</span> 
+  <span style="color:orange; font-size: 150%; line-height: 50px; vertical-align: middle;"><span id="clearlvl"></span></span>
+</div>
+
+    </div>
+
+
+
+              <h1><a href="Site_Login.html"><span>Site-19</span></a></h1>
+                
+                    <h2><span>Secure, Contain, Protect</span></h2>
+                
+                
+                <!-- google_ad_section_start(weight=ignore) -->
+                
+
+                
+                
+                    <div id="top-bar">
+      
+
+<script>
+document.getElementById("username").addEventListener("click", function() {
+  console.log("Clicked on user name");
+});</script>
+<div class="top-bar">
+  
+<ul>
+</li>
+<li><a href="javascript:;">SCP
+</a><ul>
+<li><a href="http://scp-int.wikidot.com/">Ongoing Testing</a></li>
+<li><a href="./scp/Data%20test.html">Full Site-19 Database</a></li>
+</ul>
+</li>
+<li><a href="javascript:;">FORMS
+</a><ul>
+<li><a href="https://scp-wiki.wikidot.com/news">Foundation Forms</a></li>
+<li><a href="https://scp-wiki.wikidot.com/chat-guide">Site Forms</a></li>
+<li><a href="https://scp-wiki.wikidot.com/authors-pages">Department Forms</a></li>
+<li><a href="http://05command.wikidot.com/staff-list">General Forms</a></li>
+</ul>
+</li>
+<li><a href="javascript:;">RESOURCES
+</a><ul>
+<li><a href="https://scp-wiki.wikidot.com/contribute">Foundation Resources</a></li>
+<li><a href="https://scp-wiki.wikidot.com/guide-hub">Site Resources</a></li>
+<li><a href="https://scp-wiki.wikidot.com/essay-hub">Department Resources</a></li>
+<li><a href="https://scp-wiki.wikidot.com/foundation-introduction-hub">General Resources</a></li>
+</ul>
+</li>
+<li><a href="javascript:;">GUIDELINES & PROCEDURES
+</a><ul>
+<li><a href="https://scp-wiki.wikidot.com/site-rules">Foundation Guidelines</a></li>
+<li><a href="https://scp-wiki.wikidot.com/criticism-policy">Site-Specific Guidelines</a></li>
+<li><a href="https://scp-wiki.wikidot.com/licensing-guide">Department Guidelines</a></li>
+<li><a href="https://scp-wiki.wikidot.com/deletions-guide">Ethics Committee</a></li>
+</ul>
+</li>
+<li><a href="https://scp-wiki.wikidot.com/contact-staff">STAFF CONTACTS</a></li>
+
+</ul>
+
+
+</div>
+
+                    </div>
+					
+<div class="top-bar">
+<marquee behavior="scroll" direction="right" scrollamount="15" style="color:red; font-size:200%" href="" ><strong>CONTAINMENT BREACH ONGOING<STRONG></marquee>
+<hr>
+</div>
+                
+               
+                <div id="header-extra-div-1"><span></span></div><div id="header-extra-div-2"><span></span></div><div id="header-extra-div-3"><span></span></div>
+            </div>
+            
+            <div id="content-wrap">
+                
+                    <div id="side-bar">
+                        
+
+
+                        
+
+
+<div class="side-block resources">
+  <div class="collapsible-block">
+    <div class="collapsible-block-folded" style="text-align: center;" onclick="toggleBlock()">
+      <a class="collapsible-block-link" href="#">
+        ▷&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span id="folded-imp" style="display: inline-block;">SITE BREACH DETECTED</span>
+      </a>
+    </div>
+    <div class="collapsible-block-unfolded" style="display:none;">
+  
+      <div class="collapsible-block-content" style="justify-content: center" id="unfolded-imp">
+        <div class="menu-item" style="justify-content: center;">
+          <a href="Site_Breach_Procedure.html" style="justify-content: center; text-align: center; color: red; font-weight: bold">EVACUATION PLAN 58-EM</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var ofs = 0;
+    var foldedEl = document.getElementById('folded-imp');
+    var unfoldedEl = document.getElementById('unfolded-imp');
+
+    window.setInterval(function() {
+      foldedEl.style.color = 'rgba(255,0,0,'+Math.abs(Math.sin(ofs))+')';
+      unfoldedEl.style.color = 'rgba(255,0,0,'+Math.abs(Math.sin(ofs))+')';
+      ofs += 0.01;
+    }, 10);
+
+    function toggleBlock() {
+      var unfoldedBlock = document.querySelector('.collapsible-block-unfolded');
+      if (unfoldedBlock.style.display === 'none') {
+        unfoldedBlock.style.display = 'block';
+      } else {
+        unfoldedBlock.style.display = 'none';
+      }
+    }
+  </script>
+</div>
+
+
+
+<script src="logout19.js"></script>
+<div style="clear:both; height: 0px; font-size: 1px"> </div>
+<div class="side-block">
+<div class="menu-item"><a href="">Home</a></div>
+<div class="menu-item"><a href="Site_Login.html">Secure Email System</a></div>
+<div class="heading">
+<p>SCP by Containment</p>
+</div>
+<div class="menu-item small"><a href="https://scp-wiki.wikidot.com/scp-series">Ongoing Testing</a></div>
+<div class="menu-item small"><a href="./scp/">Storage</a></div>
+<div class="menu-item small"><a href="https://scp-wiki.wikidot.com/scp-series-2">Light Security</a> </div>
+<div class="menu-item small"> <a href="https://scp-wiki.wikidot.com/scp-series-3">High Security</a> </div>
+<div class="menu-item small"> <a href="https://scp-wiki.wikidot.com/scp-series-4">Max Security</a> </div>
+<div class="menu-item small"> <a href="https://scp-wiki.wikidot.com/scp-series-5">Miscellaneous</a></div>
+<div class="heading">
+<p>Feed</p>
+</div>
+<div class="menu-item"><a href="https://scp-wiki.wikidot.com/system:recent-changes">News</a></div>
+<div class="menu-item"><a href="https://scp-wiki.wikidot.com/forum:recent-posts">Department Announcements</a></div>
+<div class="menu-item"><a href="https://scp-wiki.wikidot.com/new-pages-feed">Site Announcements</a></div>
+<div class="menu-item "><a href="https://scp-wiki.wikidot.com/shortest-pages-this-month">Important Bulletins</a></div>
+<div class="heading">
+<p>Resources</p>
+</div>
+<div class="menu-item"><a href="https://scp-wiki.wikidot.com/foundation-tales">Forms</a></div>
+<div class="menu-item"><a href="https://scp-wiki.wikidot.com/groups-of-interest">Department Specific Forms</a></div>
+<div class="menu-item"><a href="https://scp-wiki.wikidot.com/goi-formats">Contacts</a></div>
+<div class="menu-item"><a href="https://scp-wiki.wikidot.com/canon-hub">Logs/General Information</a></div>
+</div>
+<a class="close-menu" href="https://scp-wiki.wikidot.com/scp-4999##"><br>
+<img src="./index_files/black.png" style="z-index:-1; opacity: 0.3;" alt="black.png" class="image"><br></a> 
+
+                    </div>
+                
+                
+                <!-- google_ad_section_end -->
+                
+                <div id="main-content">
+                    <div id="action-area-top"></div>
+                    
+                    
+                     
+                    
+
+                    
+
+                    
+
+
+
+                    <div id="page-content">
+                        
+
+
+                        
+
+<br><br><br>
+
+<div class="hr-main">
+<hr></div>
+
+
+
+<div class="content-panel centered standalone" style="padding-left:15px">
+<h1 id="toc0"><span; style="color:#FF0000">CONTAINMENT BREACH ONGOING</span></h1>
+<p><b>PLEASE REFERENCE EVACTUATION PLAN 58-EM FOR PROCEDURES</b></p>
+<p>DO NOT ATTEMPT TO CONTACT ANYONE OUTSIDE OF THE SITE, DO NOT TRUST ANYONE</P>
+<p>ACCESS TO INFORMATION MAY BE LIMITED</p>
+<span style="white-space: pre-wrap;"> </span><br>
+<strong><u><a href="Site_Breach_Procedure.html";>EVACUATION PLAN 58-EM</a></u></strong></p>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+</div>
+<div style="clear:both; height: 0px; font-size: 1px"></div>
+</div>
+    
+    
+    </div></th>
+</tr>
+</tbody></table>
+
+</div>
+</div>
+</div>

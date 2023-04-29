@@ -1,0 +1,1 @@
+document.getElementById("logout-button").addEventListener("click",function(e){e.preventDefault(),localStorage.removeItem("username"),localStorage.removeItem("clearanceLevel"),sessionStorage.removeItem("loggedIn"),window.location.href="MTF-Login.html"});

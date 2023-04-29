@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- saved from url=(0155)https://interwiki.scpwiki.com/styleFrame.html?priority=2&theme=https://nu-scptheme.github.io/Black-Highlighter/css/min/black-highlighter.min.css&css={$css} -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+      "use strict";
+
+      // Expose identity for interwikiFrame
+      window.isStyleFrame = true;
+
+      // Find interwikiFrames in the parent that have initialised before
+      // this styleFrame did, and push the query parameters to it
+      Array.prototype.slice.call(parent).forEach(function (frame) {
+        try {
+          if (frame.isInterwikiFrame) {
+            frame.requestStyleChange(location.search);
+          }
+        } catch (error) {
+          // If an interwikiFrame in the parent isn't ready to receive a style
+          // change request, that's fine - it will pull the style from this
+          // styleFrame when it's ready
+          if (!(error instanceof DOMException)) {
+            // All other errors must be reported
+            throw error;
+          }
+        }
+      });
+    </script>
+  </head>
+<body data-new-gr-c-s-check-loaded="14.1073.0" data-gr-ext-installed="">
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
