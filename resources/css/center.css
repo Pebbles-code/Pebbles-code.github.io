@@ -18,7 +18,7 @@
         height: 100%;
         left: 0;
         top: 0.75rem;
-        background-image: url("https://github.com/Pebbles-code/Pebbles-code.github.io/blob/main/resources/css/Site-19.png");
+        background-image: url("Site-19.png");
         background-repeat: no-repeat;
         background-position: center 0;
         background-size: auto calc(var(--header-height-on-desktop) - 1.5rem);
