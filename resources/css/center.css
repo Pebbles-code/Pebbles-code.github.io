@@ -10,17 +10,6 @@
     #header {
         --search-textbox-text-color: var(--swatch-secondary-color);
         background: none;
-    }
- body {
-    background-color: black;
-    background-image: url("https://github.com/Pebbles-code/Pebbles-code.github.io/blob/main/resources/css/Site-19.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    font-family: "Courier New", Courier, monospace;
-    margin: 0;
-    padding: 0;
-}
     #header::before {
         content: " ";
         position: absolute;
@@ -28,7 +17,7 @@
         height: 100%;
         left: 0;
         top: 0.75rem;
-        background-image: url("site-19.png");
+        background-image: url("https://github.com/Pebbles-code/Pebbles-code.github.io/blob/main/resources/css/Site-19.png");
         background-repeat: no-repeat;
         background-position: center 0;
         background-size: auto calc(var(--header-height-on-desktop) - 1.5rem);
