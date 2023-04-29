@@ -10,6 +10,7 @@
     #header {
         --search-textbox-text-color: var(--swatch-secondary-color);
         background: none;
+    }
     #header::before {
         content: " ";
         position: absolute;
