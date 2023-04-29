@@ -26,6 +26,9 @@
         pointer-events: none;
     }
  
+    #header::after {
+               background-image: url("Site-19.png");
+    }
     #header h1,
     #header h2 {
         margin: 0;
