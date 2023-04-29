@@ -19,7 +19,7 @@
         height: 100%;
         left: 0;
         top: 0.75rem;
-        background-image: url(../resources/css/site-19.png);
+        background-image: url(./site-19.png);
         background-repeat: no-repeat;
         background-position: center 0;
         background-size: auto calc(var(--header-height-on-desktop) - 1.5rem);
