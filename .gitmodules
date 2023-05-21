@@ -1,0 +1,3 @@
+[submodule "submodule_path"]
+    path = submodule/secretdata
+    url = https://github.com/Pebbles-code/secretdata
