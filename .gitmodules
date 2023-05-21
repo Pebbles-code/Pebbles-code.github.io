@@ -4,3 +4,6 @@
 [submodule "secretdata"]
 	path = secretdata
 	url = https://github.com/Pebbles-code/secretdata
+[submodule "submodule"]
+	path = submodule
+	url = https://github.com/Pebbles-code/secretdata
