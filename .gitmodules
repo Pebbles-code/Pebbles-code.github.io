@@ -1,7 +1,4 @@
-[submodule "secretdata"]
-	path = secretdata
-	url = git@github.com:Pebbles-code/secretdata.git
-	branch = main
 [submodule "content"]
 	path = content
-	url = https://github.com/Pebbles-code/secretdata
+	url = git@github.com:Pebbles-code/secretdata.git
+	branch = main
