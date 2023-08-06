@@ -1,0 +1,57 @@
+/* SCP Class Colors */
+.safe {
+    color: #0ab13f;
+  }
+  
+  .euclid {
+    color: #Ec6e03;
+  }
+  
+  .keter {
+    color: #Bf0808;
+  }
+  
+  /* Level Colors */
+  .level-0 {
+    color: inherit; /* No specific color defined */
+  }
+  
+  .level-1 {
+    color: #0ab14f;
+  }
+  
+  .level-2 {
+    color: #0AA3CF;
+  }
+
+  .level-3 {
+    color: #FFFF00;
+  }
+  
+  .level-4 {
+    color: #Ec6e03;
+  }
+  
+  .level-5 {
+    color: #Bf0808;
+  }
+  
+  .level-6 {
+    color: #800080;
+  }
+  .neutralized {
+      color: gray;
+  }
+  .thaunmiel {
+      color: blue;
+  } 
+  /* Define additional level colors as needed */
+  
+  /* Apply styling for SCP class and level */
+  .table_data[data-label="Class"] span {
+    font-weight: bold; /* Optional: Highlight the class text */
+  }
+  
+  .table_data[data-label="Level"] span {
+    font-weight: bold; /* Optional: Highlight the level text */
+  }
