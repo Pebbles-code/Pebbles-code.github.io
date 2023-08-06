@@ -1,1 +1,1 @@
-document.getElementById("logout-button").addEventListener("click",function(e){e.preventDefault(),localStorage.removeItem("username"),localStorage.removeItem("clearanceLevel"),localStorage.removeItem("loggedIn"),window.location.href="Main_Login.html"});
+document.getElementById("logout-button").addEventListener("click",function(e){e.preventDefault(),localStorage.removeItem("username"),localStorage.removeItem("clearanceLevel"),localStorage.removeItem("loggedInSCP"),localStorage.removeItem("loggedInMTF"),window.location.href="Main_Login.html"});
