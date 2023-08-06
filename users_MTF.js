@@ -1,10 +1,10 @@
 const users = [
-    {
-      username: "Sgt. McConnel",
-      usernameHash:"f4ee36308ed8b261442c2e9bb35e4dd971d8e51c586fc00bb8d28b96f0d79611",
-      passwordHash: "d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1",
-      clearanceLevel: 5
-    },
+  {
+    username: "05-1",
+    usernameHash:"72c688d953be2cb774fabc9e0488c86b1b4bd111f51fe609dd7aae8a3508e1cc",
+    passwordHash: "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8",
+    clearanceLevel: 6
+  },
     {
       username: "Bob",
        usernameHash: "5f4dcc3b5aa765d61d8327deb882cf99",
