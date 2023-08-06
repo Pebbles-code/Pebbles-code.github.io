@@ -71,26 +71,7 @@
   <meta http-equiv="content-language" content="en">
         
     
-    <style type="text/css" id="internal-style">
-        
-        /* modules */
-
-
-        
-                
-        /* theme */
-                     @import url("./index_files/style.css");
-                    @import url("./index_files/1");
-
-
-            </style>
-    <style>
-	@import url("../resources/css/black-highlighter.min.19.css");
-@import url("../resources/css/darksidebar.css");
-@import url("../resources/css/anombar.css");
-@import url("../resources/css/extrablack.css");
-@import url("../resources/css/center.css");
-</style>
+  <script src="../styles.js"></script>
         
 
 
@@ -520,9 +501,21 @@ document.addEventListener("DOMContentLoaded", function() {
 							<span style="line-height: 50px; vertical-align: middle;">Clearance Level</span> 
 							<span style="color:orange; font-size: 150%; line-height: 50px; vertical-align: middle;"><span id="clearlvl"></span></span>
 						</div>
-					<h1><a href="../Site_Login.html"><span>Site-19</span></a></h1>
+                        <h1><a href="Site_Login.html" onclick="redirectToCorrectPage();"><span>Site-19</span></a></h1>
                     <h2><span>Secure, Contain, Protect</span></h2>
-						
+<script>
+    const loggedInMTF = localStorage.getItem("loggedInMTF");
+         const loggedInSCP = localStorage.getItem("loggedInSCP");
+
+    function redirectToCorrectPage() {
+            if (loggedinSCP) {
+                    window.location.href = "../Site_Login.html"
+            }
+            else if (loggedinMTF) {
+                window.location.href = "../MTF_Land.html"
+            }
+    }
+</script>
 						<div id="top-bar">
 
 <script> //Click on username WORK ON
