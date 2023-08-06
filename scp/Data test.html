@@ -505,14 +505,14 @@ document.addEventListener("DOMContentLoaded", function() {
                     <h2><span>Secure, Contain, Protect</span></h2>
 <script>
     const loggedInMTF = localStorage.getItem("loggedInMTF");
-         const loggedInSCP = localStorage.getItem("loggedInSCP");
+    const loggedInSCP = localStorage.getItem("loggedInSCP");
 
     function redirectToCorrectPage() {
             if (loggedInSCP) {
-                    window.location.href = "../Site_Login.html"
+                    window.location.href = "./Site_Login.html";
             }
             else if (loggedInMTF) {
-                window.location.href = "../MTF_Land.html"
+                window.location.href = "./MTF_Land.html";
             }
     }
 </script>
