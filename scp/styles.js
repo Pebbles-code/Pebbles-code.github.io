@@ -10,14 +10,14 @@
 
          function loadMTFStyles() {
          const styleLinks = [
-           "../scp/index_files/style.css",
-           "../scp/index_files/1",
-                   "../resources/css/normalize.min.css",
-           "../resources/css/black-highlighter.min.mtf.css",
-           "../resources/css/darksidebar.css",
-           "../resources/css/anombar.css",
-           "../resources/css/extrablack.css",
-           "../resources/css/center-mtf.css",
+           "/index_files/style.css",
+           "/index_files/1",
+                   "./resources/css/normalize.min.css",
+           "./resources/css/black-highlighter.min.mtf.css",
+           "./resources/css/darksidebar.css",
+           "./resources/css/anombar.css",
+           "./resources/css/extrablack.css",
+           "./resources/css/center-mtf.css",
 ];
 styleLinks.forEach(link => {
    const styleLink = document.createElement("link");
@@ -29,14 +29,14 @@ styleLinks.forEach(link => {
 
          function loadSCPStyles() {
            const styleLinks = [
-           "../scp/index_files/style.css",
-           "../scp/index_files/1",
-          "../resources/css/normalize.min.css",
-           "../resources/css/black-highlighter.min.19.css",
-           "../resources/css/darksidebar.css",
-           "../resources/css/anombar.css",
-           "../resources/css/extrablack.css",
-           "../resources/css/center.css",
+           "/index_files/style.css",
+           "/index_files/1",
+          "./resources/css/normalize.min.css",
+           "./resources/css/black-highlighter.min.19.css",
+           "./resources/css/darksidebar.css",
+           "./resources/css/anombar.css",
+           "./resources/css/extrablack.css",
+           "./resources/css/center.css",
            ];
            styleLinks.forEach(link => {
    const styleLink = document.createElement("link");
