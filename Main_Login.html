@@ -246,7 +246,7 @@ if (loggedIn) {
       // Passwords match, proceed with login
       localStorage.setItem("username", matchingUser.username);
       localStorage.setItem("clearanceLevel", matchingUser.clearanceLevel); // Store user clearance level in local storage
-      sessionStorage.setItem("loggedIn", true);
+      localStorage.setItem("loggedIn", true);
 
       // Redirect to the appropriate login page
       if (site === "MTF") {
