@@ -3,7 +3,20 @@
     <title>Site 19</title>
         
     <meta http-equiv="content-language" content="en">
-
+    <script>
+      // Check if user is already logged in
+      const loggedInMTF = localStorage.getItem("loggedInMTF");
+      const loggedInSCP = localStorage.getItem("loggedInSCP");
+      
+      if (loggedInMTF) {
+        // User is logged in to MTF, redirect to MTF page
+        window.location.href = "MTF_Land.html";
+      } else if (loggedInSCP) {
+        // User is logged in to SCP, redirect to SCP page
+      } else {
+        // User is not logged in, continue with normal flow
+      }
+      </script>
     <style type="text/css" id="internal-style">
         
         /* modules */

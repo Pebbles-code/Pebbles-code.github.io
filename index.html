@@ -1,8 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+		<script>
+				// Check if user is already logged in
+				const loggedInMTF = localStorage.getItem("loggedInMTF");
+				const loggedInSCP = localStorage.getItem("loggedInSCP");
+				
+				if (loggedInMTF) {
+				  // User is logged in to MTF, redirect to MTF page
+				  window.location.href = "MTF-main.html";
+				} else if (loggedInSCP) {
+				  // User is logged in to SCP, redirect to SCP page
+				  window.location.href = "SCP-main.html";
+				} else {
+				  // User is not logged in, continue with normal flow
+				}
+				</script>
 	<meta http-equiv="refresh" content="0; url=./Main_Login.html">
 	<title>Redirecting to example.com</title>
+	
 </head>
 <body>
 	<p>Please wait while you are redirected to <a href="http://example.com/">example.com</a>.</p>

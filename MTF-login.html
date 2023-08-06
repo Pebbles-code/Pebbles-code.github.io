@@ -210,18 +210,20 @@ PERPETRATORS WILL BE TRACKED, LOCATED, AND DETAINED</p>
 </div>
 <script src="users_MTF.js"></script>
 <script>
-// Check if user is already logged in
-const loggedIn = localStorage.getItem("loggedIn");
-if (loggedIn) {
-  const clearanceLevel = localStorage.getItem("clearanceLevel");
-  if (clearanceLevel === "MTF") {
-    window.location.href = "MTF-main.html";
-  } else if (clearanceLevel === "Site-19") {
-    window.location.href = "Site-19-main.html";
+  // Check if user is already logged in
+  const loggedInMTF = localStorage.getItem("loggedInMTF");
+  const loggedInSCP = localStorage.getItem("loggedInSCP");
+  
+  if (loggedInMTF) {
+    // User is logged in to MTF, redirect to MTF page
+    window.location.href = "MTF_Land.html";
+  } else if (loggedInSCP) {
+    // User is logged in to SCP, redirect to SCP page
+    window.location.href = "Site_Login.html";
+  } else {
+    // User is not logged in, continue with normal flow
   }
-}
-
-</script>
+  </script>
 
 <script type="text/javascript">
   function validate(event) {
@@ -247,7 +249,7 @@ if (loggedIn) {
       // Passwords match, proceed with login
       localStorage.setItem("username", matchingUser.username);
       localStorage.setItem("clearanceLevel", matchingUser.clearanceLevel); // Store user clearance level in local storage
-      sessionStorage.setItem("loggedIn", true);
+      localStorage.setItem("loggedInMTF", true);
 
       // Redirect to the appropriate login page
       if (site === "MTF") {
@@ -255,9 +257,12 @@ if (loggedIn) {
       } else {
         window.location.href = "Site-19-login.html";
       }
+    } else if (matchingUser && matchingUser.passwordHash !== hashedEnteredPassword) {
+      // Username matches but password doesn't, show password error message
+      alert("Incorrect password.");
     } else {
-      // Passwords do not match, show error message
-      alert("Incorrect username or password.");
+      // No matching user found, show username error message
+      alert("Incorrect username.");
     }
   }
 </script>

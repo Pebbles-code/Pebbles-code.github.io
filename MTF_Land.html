@@ -4,9 +4,12 @@
         
     <meta http-equiv="content-language" content="en">
 <script>
-if (!localStorage.getItem("loggedIn")) {
-  // Redirect to login page
-  window.location.href = "MTF-login.html";
+if (!localStorage.getItem("loggedInSCP")) {
+  // Redirect to SCP landing page
+  window.location.gred = "Site_Login.html"
+}
+else {  
+ window.location.href = "MTF-login.html";
 }
 </script>
     <style type="text/css" id="internal-style">
