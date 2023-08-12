@@ -13,7 +13,8 @@
     <script type="text/javascript" src="./index_files/init.combined.js.download"></script>
     <script src="../users_site-19.js"></script>
 
-    <script> // Filters SCP by level
+    <script>
+        // Filters SCP by level
         window.onload = function () {
             let storedUsername = localStorage.getItem("username");
             let storedClearanceLevel = localStorage.getItem("clearanceLevel");
@@ -490,10 +491,10 @@
             clear: both;
 
         }
-        
     </style>
     <link rel="stylesheet" type="text/css" href="SCP_Coloring.css">
-    <script> //Logout Code
+    <script>
+        //Logout Code
         document.addEventListener("DOMContentLoaded", function () {
             const logoutButton = document.getElementById("logout-button");
             if (logoutButton) {
@@ -545,18 +546,19 @@
                                     function redirectToCorrectPage() {
                                         if (loggedInSCP) {
                                             window.location.href = "../Site_Login.html";
-                                        }
-                                        else if (loggedInMTF) {
+                                        } else if (loggedInMTF) {
                                             window.location.href = "../MTF_Land.html";
                                         }
                                     }
                                 </script>
                                 <div id="top-bar">
 
-                                    <script> //Click on username WORK ON
+                                    <script>
+                                        //Click on username WORK ON
                                         document.getElementById("username").addEventListener("click", function () {
                                             console.log("Clicked on user name");
-                                        });</script>
+                                        });
+                                    </script>
                                     <div class="top-bar">
 
                                         <ul>
@@ -655,19 +657,23 @@
                                             </div>
                                         </div>
 
-                                        <script> //Warning Message
+                                        <script>
+                                            //Warning Message
                                             var ofs = 0;
                                             var foldedEl = document.getElementById('folded-imp');
                                             var unfoldedEl = document.getElementById('unfolded-imp');
 
                                             window.setInterval(function () {
-                                                foldedEl.style.color = 'rgba(255,0,0,' + Math.abs(Math.sin(ofs)) + ')';
-                                                unfoldedEl.style.color = 'rgba(255,0,0,' + Math.abs(Math.sin(ofs)) + ')';
+                                                foldedEl.style.color = 'rgba(255,0,0,' + Math.abs(Math.sin(ofs)) +
+                                                    ')';
+                                                unfoldedEl.style.color = 'rgba(255,0,0,' + Math.abs(Math.sin(
+                                                    ofs)) + ')';
                                                 ofs += 0.01;
                                             }, 10);
 
                                             function toggleBlock() {
-                                                var unfoldedBlock = document.querySelector('.collapsible-block-unfolded');
+                                                var unfoldedBlock = document.querySelector(
+                                                    '.collapsible-block-unfolded');
                                                 if (unfoldedBlock.style.display === 'none') {
                                                     unfoldedBlock.style.display = 'block';
                                                 } else {
@@ -762,9 +768,12 @@
                                     <div id="page-content">
 
                                         <script type="text/javascript">
-                                            YAHOO.util.Event.onContentReady("wiki-tabview-90454a366ff5326e095f52f8c26c23e6", function () {
-                                                new YAHOO.widget.TabView("wiki-tabview-90454a366ff5326e095f52f8c26c23e6");
-                                            });
+                                            YAHOO.util.Event.onContentReady(
+                                                "wiki-tabview-90454a366ff5326e095f52f8c26c23e6",
+                                                function () {
+                                                    new YAHOO.widget.TabView(
+                                                        "wiki-tabview-90454a366ff5326e095f52f8c26c23e6");
+                                                });
                                         </script>
 
 
@@ -804,7 +813,7 @@
 
 
                                         <script type="text/javascript" src="./index_files/tabview-min.js"></script>
-                                        
+
                                         <div id="wiki-tabview-90454a366ff5326e095f52f8c26c23e6" class="yui-navset">
                                             <ul class="yui-nav">
                                                 <li class="selected">
@@ -2515,7 +2524,6 @@
                                             </div>
                                         </div>
                                         <script>
-
                                         </script>
                                     </div>
                                     </th>
